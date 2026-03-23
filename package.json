@@ -1,0 +1,16 @@
+{
+  "name": "label-parser",
+  "version": "1.0.0",
+  "description": "内联标签解析器 —— 从文本中提取 [标签] 语法",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": ["src", "dist"],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.js --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.4.0"
+  },
+  "license": "MIT"
+}
