@@ -6,11 +6,14 @@
   "types": "src/index.ts",
   "files": ["src", "dist"],
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.js --minify"
+    "build": "esbuild src/index.ts --bundle --format=esm --outfile=dist/index.js --minify",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "esbuild": "^0.20.0",
-    "typescript": "^5.4.0"
+    "typescript": "^5.4.0",
+    "vitest": "^3.0.0"
   },
   "license": "MIT"
 }
